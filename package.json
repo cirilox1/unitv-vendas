@@ -1,21 +1,21 @@
 {
-  "name": "unitv-site",
-  "version": "1.0.0",
+  "name": "unitv-vendas",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "qrcode": "^1.5.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "tailwindcss": "^3.5.0",
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
+    "tailwindcss": "^3.4.0", // <--- ESTE PRECISA ESTAR AQUI!
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.17",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build", // <--- ESTE É CRÍTICO PARA O VERCEL
+    "preview": "vite preview"
   }
 }
